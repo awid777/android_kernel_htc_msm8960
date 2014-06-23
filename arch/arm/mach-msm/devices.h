@@ -103,14 +103,8 @@ extern struct platform_device apq8064_device_qup_i2c_gsbi1;
 extern struct platform_device apq8064_device_qup_i2c_gsbi2;
 extern struct platform_device apq8064_device_qup_i2c_gsbi3;
 extern struct platform_device apq8064_device_qup_i2c_gsbi4;
-<<<<<<< HEAD
-<<<<<<< HEAD
 extern struct platform_device apq8064_device_qup_i2c_gsbi7;
-=======
->>>>>>> f738670... msm: HTC: Add support for SPI GSBI1
-=======
 extern struct platform_device apq8064_device_qup_i2c_gsbi7;
->>>>>>> 38aa7da... msm: HTC: Add support for I2C GSBI7
 extern struct platform_device apq8064_device_qup_spi_gsbi1;
 extern struct platform_device apq8064_device_qup_spi_gsbi5;
 extern struct platform_device apq8064_slim_ctrl;

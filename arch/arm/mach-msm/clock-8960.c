@@ -5151,13 +5151,10 @@ static struct clk_lookup msm_clocks_8064[] = {
 	CLK_LOOKUP("dma_bam_pclk",	dma_bam_p_clk.c,	NULL),
 	CLK_LOOKUP("iface_clk",		gsbi1_p_clk.c,	"msm_serial_hsl.1"),
 	CLK_LOOKUP("iface_clk",		gsbi1_p_clk.c,	"qup_i2c.0"),
-<<<<<<< HEAD
 	CLK_LOOKUP("iface_clk",		gsbi2_p_clk.c,	"msm_serial_hsl.3"),
-=======
 #ifdef CONFIG_FPR_SPI
 	CLK_LOOKUP("iface_clk",		gsbi1_p_clk.c,		"spi_qsd.1"),
 #endif
->>>>>>> f738670... msm: HTC: Add support for SPI GSBI1
 	CLK_LOOKUP("iface_clk",		gsbi2_p_clk.c,		"qup_i2c.2"),
 #ifdef CONFIG_SERIAL_IRDA
 	CLK_LOOKUP("iface_clk",		gsbi3_p_clk.c,		"msm_serial_irda.2"),
@@ -5174,12 +5171,9 @@ static struct clk_lookup msm_clocks_8064[] = {
 	CLK_LOOKUP("iface_clk",		gsbi6_p_clk.c,		"msm_serial_hs_brcm.0"),
 #endif 
 	CLK_LOOKUP("iface_clk",		gsbi7_p_clk.c,	"msm_serial_hsl.0"),
-<<<<<<< HEAD
 	CLK_LOOKUP("iface_clk",		gsbi7_p_clk.c,	""),
-=======
 #endif
 	CLK_LOOKUP("iface_clk",		gsbi7_p_clk.c,		"qup_i2c.7"),
->>>>>>> 38aa7da... msm: HTC: Add support for I2C GSBI7
 	CLK_LOOKUP("ref_clk",	tsif_ref_clk.c,	"msm_tspp.0"),
 	CLK_LOOKUP("iface_clk",		tsif_p_clk.c,		"msm_tspp.0"),
 	CLK_LOOKUP("tsif_pclk",		tsif_p_clk.c,		"msm_tsif.1"),
@@ -5205,7 +5199,6 @@ static struct clk_lookup msm_clocks_8064[] = {
 	CLK_LOOKUP("cam_clk",		cam0_clk.c,	"4-0020"),
 	CLK_LOOKUP("cam_clk",		cam1_clk.c,	"4-0048"),
 	CLK_LOOKUP("cam_clk",		cam1_clk.c,	"4-006c"),
-<<<<<<< HEAD
 	CLK_LOOKUP("csi_src_clk",	csi0_src_clk.c,		"msm_csid.0"),
 	CLK_LOOKUP("csi_src_clk",	csi1_src_clk.c,		"msm_csid.1"),
 	CLK_LOOKUP("csi_src_clk",	csi2_src_clk.c,		"msm_csid.2"),
@@ -5215,7 +5208,6 @@ static struct clk_lookup msm_clocks_8064[] = {
 	CLK_LOOKUP("csi_phy_clk",	csi0_phy_clk.c,		"msm_csid.0"),
 	CLK_LOOKUP("csi_phy_clk",	csi1_phy_clk.c,		"msm_csid.1"),
 	CLK_LOOKUP("csi_phy_clk",	csi2_phy_clk.c,		"msm_csid.2"),
-=======
 	CLK_LOOKUP("cam_clk",		cam1_clk.c,	"2-0048"),
 	CLK_LOOKUP("csi_src_clk",	csi0_src_clk.c,		"msm_csiphy.0"),
 	CLK_LOOKUP("csi_src_clk",	csi1_src_clk.c,		"msm_csiphy.1"),
@@ -5226,7 +5218,6 @@ static struct clk_lookup msm_clocks_8064[] = {
 	CLK_LOOKUP("csi_phy_clk",	csi0_phy_clk.c,		"msm_csiphy.0"),
 	CLK_LOOKUP("csi_phy_clk",	csi1_phy_clk.c,		"msm_csiphy.1"),
 	CLK_LOOKUP("csi_phy_clk",	csi2_phy_clk.c,		"msm_csiphy.2"),
->>>>>>> 12829135... msm: HTC: Add T6 camera clock entry
 	CLK_LOOKUP("csi_pix_clk",	csi_pix_clk.c,		"msm_ispif.0"),
 	CLK_LOOKUP("csi_pix1_clk",	csi_pix1_clk.c,		"msm_ispif.0"),
 	CLK_LOOKUP("csi_rdi_clk",	csi_rdi_clk.c,		"msm_ispif.0"),

@@ -471,8 +471,6 @@ static struct resource resources_qup_spi_gsbi1[] = {
 		.end    = APQ8064_GSBI1_QUP_IRQ,
 		.flags  = IORESOURCE_IRQ,
 	},
-<<<<<<< HEAD
-=======
 #ifdef CONFIG_FPR_SPI_DMA_GSBI1
 	{
 		.name = "spidm_channels",
@@ -487,7 +485,6 @@ static struct resource resources_qup_spi_gsbi1[] = {
 		.flags = IORESOURCE_DMA,
 	},
 #endif
->>>>>>> f738670... msm: HTC: Add support for SPI GSBI1
 };
 
 struct platform_device apq8064_device_qup_spi_gsbi1 = {
@@ -565,8 +562,6 @@ struct platform_device mpq8064_device_qup_i2c_gsbi5 = {
 	.resource	= resources_qup_i2c_gsbi5,
 };
 
-<<<<<<< HEAD
-=======
 static struct resource resources_qup_i2c_gsbi7[] = {
 	{
 		.name	= "gsbi_qup_i2c_addr",
@@ -600,14 +595,11 @@ static struct resource resources_qup_i2c_gsbi7[] = {
 	},
 };
 
->>>>>>> 38aa7da... msm: HTC: Add support for I2C GSBI7
 struct platform_device apq8064_device_qup_i2c_gsbi7 = {
 	.name		= "qup_i2c",
 	.id		= 7,
 	.num_resources	= ARRAY_SIZE(resources_qup_i2c_gsbi7),
 	.resource	= resources_qup_i2c_gsbi7,
-<<<<<<< HEAD
-=======
 };
 
 /* GSBI 6 used into UARTDM Mode */
@@ -652,7 +644,6 @@ struct platform_device mpq8064_device_uartdm_gsbi6 = {
 		.dma_mask		= &msm_uart_dm6_dma_mask,
 		.coherent_dma_mask	= DMA_BIT_MASK(32),
 	},
->>>>>>> 38aa7da... msm: HTC: Add support for I2C GSBI7
 };
 
 static struct resource resources_uart_gsbi7[] = {
