@@ -93,7 +93,6 @@ static inline int kref_put(struct kref *kref, void (*release)(struct kref *kref)
 {
 	return kref_sub(kref, 1, release);
 }
-<<<<<<< HEAD
 
 /**
  * kref_get_unless_zero - Increment refcount for object unless it is zero.
@@ -116,6 +115,4 @@ static inline int __must_check kref_get_unless_zero(struct kref *kref)
 	return atomic_add_unless(&kref->refcount, 1, 0);
 }
 #endif /* _KREF_H_ */
-=======
 #endif 
->>>>>>> e98f645... Revert "kref: Implement kref_get_unless_zero v3"
