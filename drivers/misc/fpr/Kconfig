@@ -2,14 +2,12 @@
 # TI's shared transport line discipline and the protocol
 # drivers (BT, FM and GPS)
 #
-<<<<<<< HEAD
 menu "Vadality finger printer SPI driver"
 config FPR_SPI
 	bool "SPI driver for finger print"
     default n
 	help
          SPI driver for finger print
-=======
 
 menu "Vadality finger printer SPI driver"
 config FPR_SPI
@@ -29,6 +27,3 @@ config FPR_SPI_DMA_GSBI5
 	default n
 	help
 	  Enable GSBI5 SPI DMA for fingerprint
-
->>>>>>> 1698fda... misc: fpr: Add HTC Vadality fingerprint driver
-endmenu
